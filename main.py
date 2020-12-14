@@ -27,7 +27,10 @@ while run == True:
 
   elif menuchoice == 'a':
     itemtoadd = input("Please, enter the hobby to add: ")
-    hobbies.append(itemtoadd)
+    if itemtoadd in hobbies:
+      print("This compliment is already at list")
+    else:
+      hobbies.append(itemtoadd)
 
   elif menuchoice == 'd':
     itemtodelete = input("Please, enter the hobby to remove: ")
